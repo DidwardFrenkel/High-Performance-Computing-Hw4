@@ -13,9 +13,10 @@
 #define FILTER_WIDTH 7
 #define HALF_FILTER_WIDTH 3
 
-// local size of work group
-#define WGX 16
-#define WGY 16
+// local size of work group. Here, it was changed to be 8 x 8 for testing
+// purposes. Original size was 16 x 16.
+#define WGX 8
+#define WGY 8
 
 
 void print_kernel_info(cl_command_queue queue, cl_kernel knl)
