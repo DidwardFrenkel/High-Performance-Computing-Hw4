@@ -5,9 +5,11 @@ Processed MPixels/s	141.141237	238.384257	2530.117542
 Bandwidth (Gbit/s)	1.129130	1.907074	20.240940
 GFlop/s			6.832123	11.539297	122.473594
 
-The same as the above table, for 8 x 8.
+The same table for 8 x 8.
 
 			MacBook Air	CIMS opencl1	CIMS cuda1
 Processed MPixels/s	137.071843	181.505986	1607.523275
 Bandwidth (Gbit/s)	1.096575	1.452048	12.860186
 GFlop/s			6.635139	8.786031	77.814232
+
+As can be seen, decreasing the work group size results in reductions for all quantities, with the most noticeable being on cuda1, and then on opencl1 and then on the MacBook Air.
