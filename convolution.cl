@@ -85,6 +85,8 @@ kernel void convolution(
 
     // Write the data out
     imageOut[(globalRow+filterRadius)*cols + (globalCol+filterRadius)] = sum;
+    // Added to replace the original imageIn, so that when we blur again, we will blur the already blurred image.
+    imageIn[(globalRow+filterRadius)*cols + (globalCol+filterRadius)] = sum;
   }
 
   return;

@@ -14,3 +14,7 @@ GFlop/s			6.635139	8.786031	77.814232
 
 As can be seen, decreasing the work group size results in reductions for all quantities, with the most noticeable being on cuda1,
 then on opencl1, and then on the MacBook Air.
+
+Following this, we will discuss the results of iteratively applying the convolution to already blurred images, with the updates to the images written back to the imageIn file for convolution.cl.
+
+As can be seen from each of the output_cl_*.ppm pictures, with * refering to the number of iterations applied, the higher the number of iterations, the more the image becomes blurred until nothing is recognizeable anymore.
